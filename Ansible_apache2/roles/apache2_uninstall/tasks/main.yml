@@ -1,0 +1,10 @@
+---
+- name: Remove Apache2
+  apt:
+    name: apache2*
+    state: absent
+    purge: yes
+
+- name: Autoremove unnecessary packages
+  apt:
+    autoremove: yes

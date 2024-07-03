@@ -1,0 +1,7 @@
+---
+- name: Setup Apache2 on EC2
+  hosts: webserver
+  become: yes
+  roles:
+    - apache2
+  
