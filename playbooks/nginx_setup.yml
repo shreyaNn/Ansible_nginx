@@ -1,0 +1,6 @@
+---
+- name: Setup Nginx on EC2
+  hosts: webserver
+  become: yes
+  roles:
+    - nginx

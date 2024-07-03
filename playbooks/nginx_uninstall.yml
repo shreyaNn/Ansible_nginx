@@ -1,0 +1,6 @@
+---
+- name: Uninstall Nginx from EC2
+  hosts: webserver
+  become: yes
+  roles:
+    - nginx_uninstall
